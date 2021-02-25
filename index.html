@@ -16,6 +16,7 @@
     analytics.identify('hjksdfghsfdhgjkl');
     const sailthru_bid = getCookie("sailthru_bid");
     const sailthru_hid = getCookie("sailthru_hid");
+    const sailthru_pc = getCookie("sailthru_pc");
     
     analytics.track('Order Completed', {
   "checkout_id": "fkdsfsdf9f",
@@ -48,7 +49,8 @@
   },
   "campaign": {
     "sailthru_bid": sailthru_bid,
-    "sailthru_hid": sailthru_hid
+    "sailthru_hid": sailthru_hid,
+    "sailthru_pc": sailthru_pc
   }
 });
   }
