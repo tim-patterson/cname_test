@@ -19,7 +19,6 @@
     const sailthru_pc = getCookie("sailthru_pc");
     
     analytics.track('Order Completed', {
-  "message_id": sailthru_bid,
   "affiliation": "Google Store",
   "total": 27.50,
   "subtotal": 22.50,
@@ -48,7 +47,8 @@
   },
   "campaign": {
     "sailthru_hid": sailthru_hid,
-    "sailthru_pc": sailthru_pc
+    "sailthru_pc": sailthru_pc,
+    "sailthru_bid": sailthru_bid,
   }
 });
   }
